@@ -1,6 +1,6 @@
 
 
-1. git init => inicia un repositorio local (copia todo lo que tengo en el directorio donde lo inicio)
+1. git init => inicia un repositorio local, una sola vez (copia todo lo que tengo en el directorio donde lo inicio)
 
 2. U => sin seguimiento: no están guardados en el repositorio local
 
@@ -14,3 +14,11 @@
 4. A => archivo agregado al repositorio local
 
 5. M => el archivo fur modificado, pero no guardado
+
+6. git commit => embalar el paquete de archivos para enviarlo
+
+    -m => comentar o describir la tarea realizada
+
+    - Ej. git commit -m "Saludos"
+
+7. Si tocamos algo, volvemos a iniciar, menos el número 1.
