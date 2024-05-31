@@ -13,9 +13,25 @@ p {
     color: saddlebrown;
 }
 
-div{
+div {
     color: blue;
 }
+
+/* 1. Selector con ID, usarlo preferentemente una sóla vez */
+#colorMarron{
+    color: brown;
+}
+
+/* 2. Selecto de CLASE; si lo podemos utilizar más de una vez */
+.colorFondo{
+    background: violet;
+}
+
+.textoGrande{
+    font-size: 60px;
+}
+
+
 
 
 
