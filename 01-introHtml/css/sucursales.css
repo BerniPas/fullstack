@@ -1,0 +1,36 @@
+
+
+/* 2. Regla para el uso de una tipografía local - descargada */
+@font-face{
+    font-family: "automali";
+    src: url("../assets/font/Automali.ttf");
+    src: url("../assets/font/Automali.otf");
+}
+
+/* 3. link de la tipografía que usaremos */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+ol li{
+    color: brown;
+}
+
+
+p{
+    font-size: 24px;
+    /*1. Tipografía del sistema operativo */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.folder-font{
+    font-family: automali, "Source Code Pro" ;
+    font-size: 36px;
+}
+
+.google-fonts{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
