@@ -1,0 +1,10 @@
+
+@font-face{
+    font-family: happy;
+    src: url('./assets/font/Happy\ Memories.ttf');
+}
+
+
+p{
+    font-family: happy;
+}

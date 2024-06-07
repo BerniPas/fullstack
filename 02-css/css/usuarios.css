@@ -1,0 +1,38 @@
+
+body{
+    background-color: #86b6e6;
+}
+
+p{
+    background-color: #e4e7ba;
+    margin-top: 75px;
+    margin-right: 250px;
+    margin-bottom: 150px;
+    margin-left: 300px;
+}
+
+#boton{
+    margin-left: 150px;
+    margin-right: 200px;
+    padding-top: 12px;
+    padding-right: 15px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.custom{
+    border: black 20px;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-style: double;
+}
+
+.bordes{
+    border: black 20px double;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 45px;
+    padding-bottom: 35px;
+}
