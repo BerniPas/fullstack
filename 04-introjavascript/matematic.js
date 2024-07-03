@@ -55,5 +55,19 @@ console.log("El resultado del módulo es: " + resultado);
 
 console.log('====================================');
 
+//Ejemplo de lenguaje estático
+//java - C++ - C# - Kotlin - Swift - TypeScript => Programación Orientada Objetos
+//int edad = 20;
+//typescript
+//edad: number = 15;
+
+edad = '50'
+edad = 50;
+
+let uno = 50;
+uno= 'pepe'
+uno = true;
+
+
 
 
