@@ -36,3 +36,5 @@
 13. Agregamos la url del repo remoto al Git local git remote add origin https://elreporemoto.git
 
 14. Enviamos el repo con git push origin master
+
+15. git log --oneline => me muestra los commits en una sóla línea resumidas

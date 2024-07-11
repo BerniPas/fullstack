@@ -1,0 +1,30 @@
+
+1. Listamos las ramas de git
+
+    git branch
+
+2. Creamos una nueva rama en nuestro repo local
+
+    git branch <nombre de la rama>
+
+    Ej. git branch ramas
+
+3. Subimos la nueva rama a GitHub, después de commit normal
+
+    git push origin <nombre de la rama>
+
+    Ej. git push origin ramas
+
+4. Fusionamos las ramas, siempre desde master/mail
+
+    git merge <nombre de la rama>
+
+    Ej. git merge ramas
+
+5. Eliminamos una rama local 
+
+    git branch -D <nombre de la rama>
+
+    Ej. git branch -D ramas
+
+    
