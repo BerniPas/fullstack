@@ -1,5 +1,32 @@
 
-
 body{
     background-color: rgb(191, 191, 218);
+}
+
+img{
+    width: 450px;
+    height: 300px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+div{
+    margin: 10px
+}
+main{
+    display: flex;
+    /* flex-direction: row; elementos en fila - por default*/
+    /* flex-direction: column; elementos en columna ordenados */
+    /* flex-direction: row-reverse; elementos en fila pero en reversa */
+    /* flex-direction: column-reverse; elementos ecolumna pero en reversa*/
+    flex-direction: row;
+    /*  flex-wrap: nowrap; no hace un salto de línea cuando llega al final por default*/
+    flex-wrap: wrap; /* habilita el salto de línea cuando termina la ventana */
+    align-content: stretch;
+    justify-content: space-evenly;
 }
