@@ -15,7 +15,7 @@
 
     Ej. git push origin ramas
 
-4. Fusionamos las ramas, siempre desde master/mail
+4. Fusionamos las ramas, siempre desde master/main
 
     git merge <nombre de la rama>
 
@@ -26,5 +26,9 @@
     git branch -D <nombre de la rama>
 
     Ej. git branch -D ramas
+
+6. Eliminamos una rama remota con:
+
+    git push origin -d <nombre de la rama>
 
     
