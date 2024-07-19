@@ -1,7 +1,15 @@
 
+/* reseteo de css => quitar los estilos por default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body{
     background-color: rgb(191, 191, 218);
-}
+} 
 
 img{
     width: 450px;
@@ -10,6 +18,10 @@ img{
 
 div{
     margin: 10px
+}
+
+nav{
+    background-color: aqua;
 }
 
 .productos{
