@@ -16,3 +16,5 @@ for (let index = 0; index < productos.length; index++) {
     console.log(productos[index]);
 }
 
+
+

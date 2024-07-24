@@ -82,7 +82,9 @@ let personaDos = {
     direccion: 'Calle 123',
     casado: true,
     calificacion: 9.5,
-    pais: 'Argentino'
+    pais: 'Argentino',
+    saldo: 1500,
+    tarjeta: true
 };
 
 console.log(personaDos.nombre);
