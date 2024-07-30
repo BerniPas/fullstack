@@ -4,7 +4,7 @@
 // puede ser reutilizada en diferentes partes del código.
 
 //son variables globales
-let password;
+let password = '123456789'
 let email;
 
 console.log('Hola Mundo');
@@ -71,6 +71,7 @@ function sumarDos(x, y, p) {
     console.log('El resultado de la suma es: ', resultado);
     
 }
+
 sumarDos(50, 100);
 console.log(email);
 
@@ -106,3 +107,41 @@ const restar = (numeroUno, numeroDos) => {
 restar(100, 50);
 
 console.log('======================================================');
+
+console.log(password);// variables globales => fuera de una función o de un bucle
+//console.log(resultado); variables locales => dentro de una función
+//console.log(index); variables lascales => dentro de un bucle - for
+
+//funciones con retorno de valor
+const dividir = (numeroUno, numeroDos) => {
+
+    let resultado = numeroUno / numeroDos;
+
+    return resultado;
+
+    console.log('Hola Mundo');// no se ejecuta porque está después del return
+}
+
+
+let iva = dividir(100, 10) * 20;
+
+
+console.log('EL iva a pagar es de ' + iva);
+
+
+function decirNombre(nombre) {
+
+    let saludo = 'Hola ' + nombre;
+
+    return saludo;
+    
+}
+
+decirNombre('Juan'); //si se ejecuta, solamente que no lo imprermos en consola o no lo guardamos en una variable
+
+console.log(decirNombre('Juan'));
+
+let saludo = decirNombre('Pepe');
+
+console.log(saludo);
+
