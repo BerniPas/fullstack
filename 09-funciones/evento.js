@@ -23,4 +23,4 @@ const titulo = () =>{
 }
 
 
-//tarea: crear una pequeña calculadora con funciones
+//tarea: crear una pequeña calculadora con funciones, suma y resta
