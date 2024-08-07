@@ -8,17 +8,37 @@
 </head>
 <body>
 
-    <h1 class="text-center mt-5">
+    <h1 class="text-center mt-5" ondblclick="doble()">
         Calculadora Básica
     </h1>
 
     <div class="text-center mt-5 d-flex justify-content-around">
+
         <button onclick="sumar()" type="button" class="btn btn-success w-25">
             Botón para Sumar
         </button>
-        <button onclick="" type="button" class="btn btn-danger w-25">
+
+        <button onclick="restar()" type="button" class="btn btn-danger w-25">
             Botón para Restar
         </button>
+
+        <button onclick="multiplicar()" type="button" class="btn btn-primary w-25">
+            Botón para Multiplicar
+        </button>
+
+        <button onclick="dividir()" type="button" class="btn btn-secondary w-25">
+            Botón para Dividir
+        </button>
+
+    </div>
+
+    <h1 class="mt-5 text-center" onmouseover="alert('Mouse sobre el título')">
+        Otras Funciones de JS Nativas
+    </h1>
+    <div class="text-center mt-5 d-flex ">
+        <label for="contador">Contador: </label>
+        <br>
+        <input onkeypress="contador()" placeholder="hacé click en una tecla">
     </div>
     
 
