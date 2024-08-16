@@ -138,9 +138,42 @@ const modoOscuro = () => {
     //cambiamos el texto del boton
     boton.innerHTML = "Modo Claro";
 
+    let oculto = document.getElementById("oculto").value;
+    
+    alert(oculto);
+
+    let archivo = document.getElementById("archivo")
+
+    archivo.style.backgroundColor = "black";
+
 
 }
 
+
+const mostrar =  () => {
+    let password = document.getElementById("password");
+
+    //tomamos el icono PARA EL PASSWORD
+    let iconoOjo = document.getElementById("iconoOjo");
+
+
+    
+    if(password.type === "password"){
+        password.type = "text";
+    }else{
+        password.type = "password";
+    }
+}
+
+
+let dia = new Date();
+
+console.log(dia);
+console.log(dia.getDay());
+console.log(dia.getFullYear());
+console.log(dia.getMonth());
+console.log(dia.getMilliseconds());
+console.log(dia.getUTCDay());
 
 
 //#0D1117

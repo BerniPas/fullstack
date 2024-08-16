@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Login</title>
@@ -27,7 +28,16 @@
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" placeholder="mínimo de 8 caracteres">
+                <input type="password" class="form-control" id="password" placeholder="mínimo de 8 caracteres un número un símbolo">
+
+
+                <!-- AGREGAMOS UN ICONO DE OJOS AL PASS -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16" id="iconoOjo"
+                    <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7 7 0 0 0 2.79-.588M5.21 3.088A7 7 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474z"/>
+                    <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12z"/>
+                </svg>
+
+                <input type="checkbox" onclick="mostrar()"> Mostrar datos
             </div>
             <div>
                 <h2>Selecciona tus Hobbys</h2>
@@ -48,6 +58,41 @@
                     <label for="Natación" class="form-label">20: </label>
                     <input type="radio" value="20">
             </div>
+
+            <div class="mb-3">
+                <label for="oculto">Input Oculto</label>
+                <!-- este input no está a la vista -->
+                <input type="hidden" id="oculto"> 
+            </div>
+
+            <div class="mb-3">
+                <label for="oculto">Selecciona un archivo</label>
+                <!-- este input no está a la vista -->
+                <input type="file" id="archivo"> 
+            </div>
+
+            <div class="mb-3">
+                <label for="oculto">Rango</label>
+                <!-- este input no está a la vista -->
+                <input type="range" min="0" max="100"> 
+            </div>
+
+            <div class="mb-3">
+                <label for="oculto">Rango</label>
+                <!-- este input no está a la vista -->
+                <input type="date"> 
+            </div>
+
+            <div class="mb-3">
+                <label for="oculto">Rango</label>
+                <!-- este input no está a la vista -->
+                <textarea cols="20" rows="10"> 
+            </div>
+
+
+
+
+
             <div class="mb-3">
                 <button type="reset" class="btn btn-danger w-25">
                     Borrar
