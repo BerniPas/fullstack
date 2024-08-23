@@ -1,0 +1,21 @@
+
+
+1. npm init 
+
+    inicializa un archivo de configuración para mi proyecto con Node
+
+2. npm init -y   
+
+    el atajo para hacer lo mismo
+
+3. npm init --yes
+
+    estos dos comandos no me permiten personalizar el archivo
+
+4. npm i node-sass
+
+    npm instala la librería o paquete o dependencia de node-sass
+    node no tiene todas las herramientas en su núcleo para el proyecto que queremos
+
+
+5. traspilar = pasar un lenguaje de programación a otro lenguaje parecido

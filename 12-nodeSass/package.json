@@ -1,0 +1,19 @@
+{
+  "name": "12-nodesass",
+  "version": "1.0.0",
+  "description": "Repaso de Node y de Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/index.scss css/index.css",
+    "convertir": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "Sass"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

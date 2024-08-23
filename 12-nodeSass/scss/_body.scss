@@ -1,0 +1,14 @@
+
+
+body {
+    background-color: $color;
+}
+
+h1{
+    color: $color2;
+    font-family: $mitipografia;
+}
+
+div{
+    @include centrar;
+}
