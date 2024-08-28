@@ -1,0 +1,36 @@
+.navbar {
+  color: #f7f7f7;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200) / 2);
+  z-index: 10;
+  position: relative; }
+  .navbar .navbar__logo {
+    color: #2541b2; }
+  .navbar .navbar__menu__links {
+    color: #fb4b4e; }
+
+#button {
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background: #00cc66;
+  margin-left: 16px;
+  color: #f7f7f7; }
+  #button:hover {
+    background: #fb4b4e;
+    transition: all 0.3s ease; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* body{
+    @include tablet;
+    @include mobile;
+
+    @extend %align-center;
+} */
