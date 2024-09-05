@@ -1,12 +1,10 @@
+
+@import "reset";
 @import 'navbar';
 @import 'productos';
 
-* {
-  margin:0;
-  padding:0;
-  font-family: 'Kumbh sans', sans-serif;
-  box-sizing: border-box;
-}
+
+
 //Hero section css
 .hero {
   background-color : $light;

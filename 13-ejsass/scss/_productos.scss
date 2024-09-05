@@ -5,6 +5,7 @@ $font-family: 'Roboto', sans-serif;
 
 body {
   font-family: $font-family;
+  color: $orangeRed;
 }
 
 // Mixins
@@ -29,8 +30,7 @@ body {
 }
 
 .productos {
-  display: flex;
-  flex-wrap: wrap;
+  @include flexStyle;
   justify-content: space-between;
   padding: 20px;
 
@@ -51,6 +51,7 @@ body {
       h3 {
         font-size: 1.2rem;
         margin-bottom: 10px;
+        color: $lime;
       }
 
       p {
