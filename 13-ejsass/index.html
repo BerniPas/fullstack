@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Práctica con SCSS</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet " 
+  href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css " />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SASS</title>
 </head>
 <body>
-
-    <nav class="navbar">
-        <a href="/" class="navbar__logo">HOLA GENTE</a>
-        <div class="navbar__divs">
-            <i class=""></i>
-        </div>
-        <div class="navbar__menu">
-            <a href="/" class="navbar__menu__links">Home</a>
-            <a href="/" class="navbar__menu__links">Productos</a>
-            <a href="/" class="navbar__menu__links">Sucursales</a>
-            <a href="/" class="navbar__menu__links" id="button">Login</a>
-        </div>
-    </nav>
-
-    <div>
-
+  <!-- Navbar section-->
+  <nav class ="navbar">
+    <a href ="./index.html" class ="navbar__logo"> SASS</href>
+    <div class ="navbar__bars">
+      <i class="fas fa-bars"> </i>
     </div>
-
-    <footer>
-        <h2>
-            Para tarea Grupal
-        </h2>
-    </footer>
+    <div class ="navbar__menu">
+      <a href="./index.html" class="navbar__menu--links">Home</a>
+      <a href="./productos.html" class="navbar__menu--links">Productos</a>
+      <a href="" class="navbar__menu--links">Contacto</a>
+      <a href="" class="navbar__menu--links" id ="button">Login</a>
+    </div>
+  </nav>
     
+  <!-- Hero section-->
+<div class = "hero">
+  <div class="hero__container">
+    <div class="hero__container--left">
+      <h1>Próximamente  </h1>
+      <h2>Estás listo?  </h2>
+      <p>Esta noche ganamos!!</p>
+      <button class="hero__container--btn">
+          <a href="/">Registrarse</a>
+      </button>
+    </div>
+    <div class="hero__container--right">
+      <img class="hero__container--img" src="https://media.a24.com/p/3eb2ffd642a07a1e22e538992355cbec/adjuntos/296/imagenes/009/133/0009133388/1200x675/smart/seleccion-argentinajpg.jpg" alt="seleccion">
+    </div>
+  </div>
+  </div>
+  
 </body>
 </html>

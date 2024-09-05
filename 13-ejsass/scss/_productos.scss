@@ -1,0 +1,62 @@
+// Reset
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+$font-family: 'Roboto', sans-serif;
+
+body {
+  font-family: $font-family;
+}
+
+// Mixins
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
+
+// Estructura básica
+.title {
+  background-color: $primary-color;
+  color: #fff;
+  text-align: center;
+  padding: 50px;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+
+  .producto {
+    width: 30%;
+    margin-bottom: 35px;
+    @include rounded(10px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    img {
+      width: 100%;
+    }
+
+    .product-info {
+      padding: 45px;
+      margin: 50px;
+
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        color: $gray;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
