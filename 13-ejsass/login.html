@@ -9,14 +9,13 @@
     <title>Login</title>
 </head>
 
-<body>
+<body class="container">
 
     <h1 class="text-center mt-5">
         Login con el DOM de JS
     </h1>
 
-    <div class="mt-5 justify-content-around">
-
+    <div class="mt-5">
         <form class="w-75">
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
@@ -26,17 +25,16 @@
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" placeholder="mínimo de 8 caracteres">
             </div>
-            <div class="">
-                
+            <div class="text-center">
                 <button type="reset" class="btn btn-danger w-25">
                     Borrar
                 </button>
+                <button class="btn btn-success w-25" id="botonEnviar">
+                    Login
+                </button>
             </div>
+            
         </form>
-
-        <button onclick="loginUser()" class="btn btn-success w-25">
-            Login
-        </button>
         
 
 

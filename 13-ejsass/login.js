@@ -7,9 +7,12 @@ let password;
 //base de datos
 let emailDatos = "pepe@gmail.com";
 let passwordDatos = "12345678";
+let botonEnviar = document.getElementById("botonEnviar");
 
 
-const loginUser = () => {
+botonEnviar.addEventListener('click', (e) => {
+
+    e.preventDefault();
 
     email = document.getElementById("email").value;
     password = document.getElementById("password").value;
@@ -36,4 +39,4 @@ const loginUser = () => {
     }
 
 
-}
+});

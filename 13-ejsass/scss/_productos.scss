@@ -3,7 +3,12 @@
 
 $font-family: 'Roboto', sans-serif;
 
-body {
+@mixin flexStyle {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productos {
   font-family: $font-family;
   color: $orangeRed;
 }
@@ -29,7 +34,7 @@ body {
   }
 }
 
-.productos {
+.productos-cards {
   @include flexStyle;
   justify-content: space-between;
   padding: 20px;
