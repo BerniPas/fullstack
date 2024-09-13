@@ -1,7 +1,6 @@
 
 
 let productos = [
-
     {
         "id": 1,
         "nombre": "Manzana Roja",
