@@ -1,0 +1,37 @@
+1) Al iniciar la página pedir con un prompt al usuario que escriba el nombre de un personaje del mundo de Mario Bros. El texto del prompt debe ser: "¿Quién se presenta hoy? (Mario, Luigi, Bowser, Peach, Yoshi, Toad, Toadette, Daisy)". No escribir ningún valor por defecto, para que el usuario escriba el nombre que le interese. Mostrar en la consola la respuesta del usuario.
+
+
+2) Rellenar el <span> (inicialmente vacío) que está ubicado dentro del <h1> de la página con el nombre completo del personaje. Para esto, a partir del nombre ingresado por el usuario en el prompt, mostrar el nombre completo del personaje, según los siguientes valores:
+
+Mario: Mario
+Luigi: Luigi
+Bowser: Bowser Morton Koopa
+Peach: Princesa Peach Toadstool
+Yoshi: T. Yoshisaur Munchakoopas
+Toad: Toad
+Toadette: Toadette
+Daisy: Princesa Daisy
+
+Es decir, que si el nombre ingresado en el prompt es "Yoshi" se mostrará "T. Yoshisaur Munchakoopas" dentro del <span>, mientras que si se ingresó "Peach" se mostrará el valor "Princesa Peach Toadstool".
+
+Por lo tanto, si en el prompt se ingresa, por ejemplo, "Bowser" el usuario verá que el encabezado principal de la página quedará establecido con el texto "Hoy se presenta Bowser Morton Koopa", ya que el <h1> ya tenía algo de texto inicialmente y solo se está modificando la parte del <span> interno. Si no se ingresó un personaje válido, el texto resultante dirá "Hoy se presenta (desconocido)".
+
+
+3) Solo si anteriormente se eligió un personaje válido de la lista, utilizar el texto ingresado por el usuario, para ir a buscar en el HTML un elemento con un ID idéntico, pero en minúsculas, y guardarlo en una variable. Es decir, que si el usuario escribe "Luigi", se buscará un elemento HTML el id "luigi". Establecer el atributo title con el valor "Presentado" al elemento HTML encontrado. Si funciona, el personaje se va a presentar... aunque no todos.
+
+
+4) Verificar por qué solo Mario, Luigi y Bowser se presentan y realizar las correcciones necesarias para que todos lo hagan.
+
+
+5) Editar el HTML y agregar después del <h1> un elemento <div> que contenga el texto "Presentar" y estilizarlo con CSS para que parezca ser un botón. Definir con CSS que el elemento se muestre distinto al pasar el cursor por arriba y al ser presionado (idealmente, un efecto de que el botón se levante y se hunda, respectivamente). El diseño del botón es libre, pero debe ser un diseño cuidado y que combine con los elementos y colores ya definidos en la página. Buscar ejemplos de diseños en la web. Se pueden utilizar propiedades y/o técnicas vistas o no en clase para la definición de los estilos del botón.
+
+
+6) Programar este botón para que el comportamiento que se definió en el punto 1 del ejercicio se ejecute solo cuando el botón sea presionado. Es decir, que al cargar la página ya no se debe mostrar un prompt, sino que eso debe suceder cuanto el usuario haga click con el botón creado. Una vez que se haya presionado y se haya abierto y cerrado el prompt, el botón debe desaparecer.
+
+
+BONUS:
+
+1) Quitar el comportamiento de que el botón creado se oculte luego de ser presionado, que se había solicitado en el punto anterior. Dejarlo visible en todo momento, incluso luego de ser presionado, manteniendo su comportamiento de mostrar el prompt y presentar al presonaje solicitado, de modo tal que cada vez que sea presionado pregunte otro nombre con un prompt y presente a otro personaje, pero ocultando el último personaje que se mostró, de tal manera que solo habrá un personaje visible a la vez, pero con cada presión sobre el botón se podrá cambiar de personaje, siempre y cuando el usuario haya ingresado un nombre válido, en caso contrario, se mantendrá visible el personaje visible actualmente, si es que hay uno.
+
+
+2) Programar cada recuadro para que al ser presioniado se muestre u oculte el personaje que hay allí, de manera alternada. Es decir, que al iniciar la página, estando todos los personajes ocultos, se debería poder presionar cualquier recuadro y dicho recuadro debería presentar al personaje correspondiente. Al presionarlo de nuevo, deberá volver a ocultarse. Se podrá hacer click en otro recuadro, para presionar a otro personaje, pero siempre ocultando al último visible. El botón definido en puntos anteriores, que utiliza el prompt, debe seguir funcionando.
