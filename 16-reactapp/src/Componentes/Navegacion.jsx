@@ -32,7 +32,7 @@ const Navegacion = () => {
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <Link to="/nosotros" class="nav-link" aria-disabled="true">Nosotros</Link>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">

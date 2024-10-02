@@ -1,6 +1,6 @@
 
 // sintaxis para importar una imagen en react
-import imagen from './logo.svg';
+// import imagen from './logo.svg';
 
 // importar el archivo css
 import './css/App.css';
@@ -9,6 +9,7 @@ import './css/App.css';
 import Navegacion from './Componentes/Navegacion';
 import Login from './Pages/Login';
 import Nosotros from './Pages/Nosotros';
+import Home from './Pages/Home';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
@@ -27,33 +28,10 @@ const App = () => {
       <Navegacion />
 
       <Routes>
-        <Route path="/"element={ <App /> } />
+        <Route path="/" element={ <Home /> } />
         <Route path="/login" element= { <Login />} />
         <Route path="/nosotros" element= { <Nosotros />} />
       </Routes>
-
-      <div className="App">
-
-        <header className="App-header">
-
-          <img src={imagen} className="App-logo" alt="logo" />
-
-
-          <p className='mt-5 text-danger'>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-
-          <a 
-            className="App-link" 
-            href="https://reactjs.org" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            Learn React
-          </a>
-
-        </header>
-
-      </div>
 
     </React.Fragment>
 
