@@ -7,7 +7,10 @@ import './css/App.css';
 
 // importamos el componente de navegación
 import Navegacion from './Componentes/Navegacion';
+import Login from './Pages/Login';
+import Nosotros from './Pages/Nosotros';
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 
 // primer componente de react - El componente Principal
@@ -22,6 +25,12 @@ const App = () => {
     <React.Fragment>
 
       <Navegacion />
+
+      <Routes>
+        <Route path="/"element={ <App /> } />
+        <Route path="/login" element= { <Login />} />
+        <Route path="/nosotros" element= { <Nosotros />} />
+      </Routes>
 
       <div className="App">
 
