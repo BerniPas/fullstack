@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>ALTA/MEGAFIT</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./image/logo.png" alt="logo"></a>
+            </div>
+            <ul>
+                <li> <a href="clubes.html">Clubes</li></a> 
+                <li> <a href="ecommerce.html">Ecommerce</li></a>
+                <li> <a href="contacto.html">Contacto</li></a>
+                <li> <a href="nosotros.html">Nosotros</li></a>
+                <li> <a href="alta.html">Alta</li></a>
+                <li class="inicio">Iniciar sesión</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="formularioAlta">
+        <form>
+            <label> Nombre: <br> <input class="formu" type=”text” required > </label> <br>
+            <label >Precio: <br> <input class="formu" type=”number” required > </label> <br>
+            <label >Stock: <br> <input class="formu" type=”number” required > </label> <br>
+            <label >Marca: <br> <input class="formu" type=”text” required > </label> <br>
+            <label >Categoría: <br> <input class="formu" type=”text” required > </label> <br>
+            <label>Descripción corta: <br> <textarea class="formu" name="comentarios" id="comentarios"></textarea></label> <br>
+            <label>Descripción larga: <br> <textarea class="formu" name="comentarios" rows="4" cols="50" id="comentarios"></textarea></label> <br>
+            <label><input type="checkbox" name="enviosincosto" value="enviosincosto"> Envío sin costo </label> <br>
+            <label >Edad desde: <br> <input class="formu" type=”number” required > </label> <br>
+            <label >Edad hasta: <br> <input class="formu" type=”number” required > </label> <br>
+            <label for="foto">Selecciona una foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*"><br>
+            <button class="botonEnviar" type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <div class="logoDos">
+            <a href="index.html">
+                <img src="./image/footer.png" alt="logo"></a>
+        </div> 
+        <div class="datos">
+            <h4>Dirección: Av. Brasil 2025 <br>
+                Tel. 29367808 <br>
+                Whatsapp: 096536789 </h4>
+        </div>
+        <hr>
+    <h5>Redes Sociales</h5>
+    <div class="redes">
+        <img src="./image/ig.png" alt="Instagram">
+        <img src="./image/fb..png" alt="Facebook">
+        <img src="./image/Tiktok.png" alt="TikTok">
+    </div>
+    <hr>
+    <div class="textoFinal">
+        <p>Derechos reservados MEGAFIT</p>
+    </div>
+    </footer>
+</body>
+</html>
