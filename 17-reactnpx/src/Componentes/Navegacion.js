@@ -1,11 +1,14 @@
 import imagen from '../image/logo.png'
 import { Link } from 'react-router-dom';
 
-
-
-
-
 const Navegacion = () => {
+
+
+    const buscar = () => {
+        alert("Buscando...");
+    }
+
+
     return(
         <>
             <header>
@@ -20,7 +23,9 @@ const Navegacion = () => {
                             Clubes
                         </li>
                         <li>
-                            Ecommerce
+                            <Link to="/ecommerce">
+                                Ecommerce
+                            </Link>
                         </li>
                         <li>
                             <Link to="/contacto">
@@ -36,11 +41,13 @@ const Navegacion = () => {
                             </Link>
                         </li>
                         <li>
-                            Login
+                            <Link to="/login">
+                                Login
+                            </Link>
                         </li>
                     </ul>
                     <input class="buscar" type="search" id="search" name="search" />
-                    <a href="www.educaionit.com" class="boton">Buscar</a>
+                    <button onClick={buscar} class="boton">Buscar</button>
                 </nav>
             </header>
         </>
