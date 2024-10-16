@@ -1,12 +1,24 @@
 import imag1 from '../image/enargy.webp';
 import imag2 from '../image/enargy.webp';
 
-const Ecommerce = () => {
-
-
+const Ecommerce = () => {    
+    
+    
     const carrito = () => {
+
         alert("Producto agregado al carrito");
-        localStorage.setItem('producto', 'Enargy gel');
+        
+        const articulo = {
+            nombre: 'Enargy gel',
+            precio: 2500,
+            descripcion: 'Ideal para todo trabajo aeróbico. - Con sales de rehidratación.'
+        }
+
+        localStorage.setItem('producto', JSON.stringify(articulo));
+        /* setProducto(articulo); */
+ 
+
+        //localStorage.setItem('producto', 'Enargy gel');
     }
 
 

@@ -45,6 +45,13 @@ const Navegacion = () => {
                                 Login
                             </Link>
                         </li>
+                        <li>
+                            <Link to="/carrito">
+                            <i class="bi bi-cart-check-fill">
+                                Carrito
+                            </i>
+                            </Link>
+                        </li>
                     </ul>
                     <input class="buscar" type="search" id="search" name="search" />
                     <button onClick={buscar} class="boton">Buscar</button>

@@ -2,41 +2,38 @@ import './login.css';
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react';
 
+
+
 const Login = () => {
 
-    /* variables en JS nativo - no lo usamos en React*/
-    //let mail = document.getElementById('email').value; // pepe@gmail.com
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
-    //let mail = '';
-
-    //mail = 'juan@gmaiñl.com'
-
-
-    /* variables en React - useState = manejar los estados */
-    const [email, setEmail] = useState('pepe@gmail.com');
-    
-    
     const navigate = useNavigate();
-
-
     
-    
-    const loginUser = () => {
+    const loginUser = (event) => {
 
-        alert("Login realizado");
-
+        event.preventDefault();
 
         console.log(email);
+        console.log(password);
         
 
-       // window.location.href = '/'; // Redirecciona a la página principal en js nativo
+        if(email == '' || password == '') { 
+            alert("Complete los campos");
+            return;
+        }
 
-        navigate('/admin');         // Redirecciona a la página principal en react
-
+        if(email == 'pepe@gmail.com' && password == '1234') {
+        alert("Login realizado")
+        navigate('/admin');         
+        } else {
+        alert("Usuario o contraseña incorrecta");
+        navigate('/*');
+        }
     }
 
     return(
-
         <>
             <h1 class="text-center mt-5">
                 Login React
@@ -47,11 +44,25 @@ const Login = () => {
                 <form class="w-75">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" />
+                        <input 
+                            type="email" 
+                            class="form-control" 
+                            id="email" 
+                            value={email}
+                            onChange={(event) => setEmail(event.target.value)}
+                            aria-describedby="emailHelp" 
+                            />
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="mínimo de 8 caracteres" />
+                        <input 
+                            type="password" 
+                            class="form-control" 
+                            id="password" 
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            placeholder="mínimo de 8 caracteres" 
+                            />
                     </div>
 
                     <div className='d-flex mt-5 justify-content-around'>                       

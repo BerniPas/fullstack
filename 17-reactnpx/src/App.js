@@ -10,6 +10,7 @@ import Error from './Error/Error';
 import Login from './Login/Login';
 import Admin from './Admin/Admin';
 import Ecommerce from './Ecommerce/Ecommerce';
+import Carrito from './Carrito/Carrito';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/alta' element={<Alta />} />
         <Route path='/login' element={<Login />} />
         <Route path='/admin' element={<Admin />} />
+        <Route path='/carrito' element={<Carrito />} />
         <Route path='/*' element={<Error />} />
       </Routes>
 
