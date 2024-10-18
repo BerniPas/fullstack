@@ -25,11 +25,12 @@ const Login = () => {
         }
 
         if(email == 'pepe@gmail.com' && password == '1234') {
-        alert("Login realizado")
-        navigate('/admin');         
+            alert("Login realizado")
+            window.sessionStorage.setItem('user', 'pepe@gmail.com');
+            navigate('/admin');         
         } else {
-        alert("Usuario o contraseña incorrecta");
-        navigate('/*');
+            alert("Usuario o contraseña incorrecta");
+            navigate('/*');
         }
     }
 
