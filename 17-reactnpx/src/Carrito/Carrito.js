@@ -22,7 +22,7 @@ const Carrito = () => {
             setUser(window.sessionStorage.getItem('user'));
             setCarrito(producto);
         }
-    },{});
+    },[]);
 
     const eliminarDatos = () => {
         localStorage.removeItem('producto');
