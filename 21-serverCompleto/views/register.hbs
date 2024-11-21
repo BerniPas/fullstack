@@ -1,0 +1,31 @@
+
+<div class="container text-center mt-5">
+    <h1>
+        Registro de Usuarios
+    </h1>
+</div>
+
+<div class="container">
+        <form method="post" action="/user/register">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="mínimo de 8 caracteres">
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-success w-25">
+                    Registrarse
+                </button>
+                <button type="reset" class="btn btn-danger w-25">
+                    Borrar
+                </button>
+            </div>
+        </form>
+</div>
