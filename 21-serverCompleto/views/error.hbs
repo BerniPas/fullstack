@@ -5,5 +5,12 @@
         Error
     </h1>
     <p>Estamos trabajando para solucionar este Error</p>
-    <p>Detalles: {{ error }}</p>
+    <p>Detalles: 
+        <ol>
+            {{#each error }}
+                <li>{{this}}</li>
+            {{/each}}
+        </ol>
+        
+    </p>
 </div>
