@@ -57,6 +57,23 @@ router.get("/register", (req, res) => {
     res.render("register");
 });
 
+router.post("/creado", async (req, res) => {
+    const { nombre, email, password } = req.body;
+
+    const persona = {
+        nombre,
+        email,
+        password
+    }
+
+    console.log(persona);
+
+    res.json({
+        data: 'Usuario creado con éxito'
+    });
+
+});
+
 // ruta para registrar un usuario
 router.post("/register",
     [
