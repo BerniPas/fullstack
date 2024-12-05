@@ -1,0 +1,20 @@
+{
+  "name": "26-apprest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others \"cd back & npm run dev \" \"cd font & npm start\""
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express-validator": "^7.2.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
