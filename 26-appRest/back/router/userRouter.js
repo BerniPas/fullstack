@@ -25,6 +25,32 @@ router.post("/login", async (req, res) => {
 
 });
 
+// obtenemos todos los usuarios
+router.get("/", async (req, res) => {
+    try {
+        const usuarios = await User.find();
+        return res.status(200).json(usuarios);
+    } catch (error) {
+        console.log('Error al obtener los usuarios:', error);
+        return res.status(400).json({ message: 'Error al obtener los usuarios' });
+    }
+});
+
+// eliminamos un usuario
+router.delete("/:id", async (req, res) => {
+    try {
+        const { id } = req.params;
+
+        console.log(id);
+        
+        await User.findByIdAndDelete(id);
+        return res.status(200).json({ message: 'Usuario eliminado correctamente' });
+    } catch (error) {
+        console.log('Error al eliminar el usuario:', error);
+        return res.status(400).json({ message: 'Error al eliminar el usuario' });
+    }
+});
+
 
 // ruta para registrar un usuario
 router.post("/register",
